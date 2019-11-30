@@ -4,7 +4,7 @@
 
 ### Background
 
-Kubernetes, loadbalancers and other PaaS have a concept of a health check. These are simple GET requests against an endpoint that you add that tells the orchestrator if a web worker is healthy or not. The problem is that these requests come from within the same network running your app using an non-deterministic hostname or IP address. So instead of making your allowed hosts wide open with `['*']` (to allow any requests to get by), you can simply install this package to allow these requests to occur without introducing more technical/security risks then neccessary.
+Kubernetes, loadbalancers and other PaaS have a concept of a health check. These are simple GET requests against an endpoint that you define which tells the orchestrator if a web worker is healthy or not. The problem is that these requests come from within the same network running your app using an non-deterministic hostname or IP address. So instead of making your allowed hosts wide open with `['*']` (to allow any requests to get by), you can simply install this package to allow these requests to occur without introducing more technical/security risks then neccessary.
 
 For example, given a kubernetes deployment with the following details:
 
