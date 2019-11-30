@@ -6,7 +6,7 @@ except ImportError:
     MiddlewareMixin = object
 
 
-class ByPassMiddleware(MiddlewareMixin):
+class ByPassForHealthChecks(MiddlewareMixin):
     @staticmethod
     def process_request(request):
         host = request.get_host()

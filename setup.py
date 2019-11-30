@@ -11,7 +11,7 @@ except ImportError:
 
 
 def get_version(*file_paths):
-    """Retrieves the version from core/__init__.py"""
+    """Retrieves the version from django_allow_healthchecks/__init__.py"""
     filename = os.path.join(os.path.dirname(__file__), *file_paths)
     version_file = open(filename).read()
     version_match = re.search(r"^__version__ = ['\"]([^'\"]*)['\"]",
@@ -21,7 +21,7 @@ def get_version(*file_paths):
     raise RuntimeError('Unable to find version string.')
 
 
-version = get_version("core", "__init__.py")
+version = get_version("django_allow_healthchecks", "__init__.py")
 
 
 if sys.argv[-1] == 'publish':
@@ -47,13 +47,14 @@ history = open('HISTORY.md').read().replace('.. :changelog:', '')
 setup(
     name='django-allow-healthchecks',
     version=version,
-    description="""White list internal hosts that perform healthchecks""",
+    description="""White list internal hosts that perform health-checks""",
     long_description=readme + '\n\n' + history,
     author='Michael',
+    long_description_content_type='text/markdown',
     author_email='imichael@pm.me',
     url='https://github.com/iMerica/django-allow-healthchecks',
     packages=[
-        'core',
+        'django_allow_healthchecks',
     ],
     include_package_data=True,
     install_requires=[],
