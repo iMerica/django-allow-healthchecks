@@ -55,4 +55,4 @@ MIDDLEWARE = [
 Assign your magical header value
 
     HEALTH_CHECK_HEADER_VALUE = 'XYZ-Health'
-```
+
