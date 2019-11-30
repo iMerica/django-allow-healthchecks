@@ -1,8 +1,8 @@
 
-# Django Allow Health-checks
+# Django Allow Health-Checks
 
 
-### Quickstart
+### Setup
 
 Install django-allow-healthchecks
 
