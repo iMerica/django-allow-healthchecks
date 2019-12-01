@@ -56,3 +56,7 @@ Assign your magical header value
 
     HEALTH_CHECK_HEADER_VALUE = 'XYZ-Health'
 
+
+## Notes
+
+Django 2.2+ only!
