@@ -3,4 +3,4 @@ include CONTRIBUTING.md
 include HISTORY.md
 include LICENSE
 include README.md
-recursive-include core *.html *.png *.gif *js *.css *jpg *jpeg *svg *py
+recursive-include django_allow_healthchecks *.html *.png *.gif *js *.css *jpg *jpeg *svg *py
